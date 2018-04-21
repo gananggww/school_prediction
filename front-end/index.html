@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PREDIKSI POKER</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="title">
+        PREDIKSI POKER
+      </div>
+      <div class="form">
+        <div class="content-form">
+          <div class="label">Nilai UN</div>
+          <div class="nilai">
+            <div class="sub-label">Bahasa Indonesia</div>
+            <input type="text" v-model="input.ind" value="">
+          </div>
+          <div class="nilai">
+            <div class="sub-label">Bahasa Inggris</div>
+            <input type="text" v-model="input.ing" value="">
+          </div>
+          <div class="nilai">
+            <div class="sub-label">Matematika</div>
+            <input type="text" v-model="input.math" value="">
+          </div>
+          <div class="nilai">
+            <div class="sub-label">IPA</div>
+            <input type="text" v-model="input.ipa" value="">
+          </div>
+          <div class="nilai">
+            <div class="sub-label">Beasiswa</div>
+            <select>
+              <option value="tidak ada">Tidak Ada</option>
+              <option value="bidik misi">Bidik Misi</option>
+              <option value="prestasi">Prestasi</option>
+            </select>
+          </div>
+          <button type="button" name="button" v-on:click="analysis()">Analysis</button>
+        </div>
+      </div>
+      <div class="result">
+          {{input.ind}}
+          {{input.ing}}
+          {{input.math}}
+          {{input.ipa}}
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>
